@@ -1,0 +1,44 @@
+﻿{
+    "seed_id":  "S004",
+    "ip":  "103.253.42.61",
+    "source":  "VirusTotal",
+    "observed_date":  "2026-09-30",
+    "detection":  "5/91",
+    "asn":  "AS13398",
+    "organization":  "Tele Asia Limited",
+    "country":  "HK",
+    "network":  "103.253.40.0/22",
+    "community_comments":  2,
+    "last_analysis":  "15 days ago",
+    "vendors":  [
+                    {
+                        "verdict":  "Malware",
+                        "name":  "AlphaSOC"
+                    },
+                    {
+                        "verdict":  "Malicious",
+                        "name":  "CRDF"
+                    },
+                    {
+                        "verdict":  "Malicious",
+                        "name":  "Lionic"
+                    },
+                    {
+                        "verdict":  "Malware",
+                        "name":  "MalwareURL"
+                    },
+                    {
+                        "verdict":  "Malicious",
+                        "name":  "SOCRadar"
+                    },
+                    {
+                        "verdict":  "Suspicious",
+                        "name":  "alphaMountain.ai"
+                    },
+                    {
+                        "verdict":  "Suspicious",
+                        "name":  "Gridinsoft"
+                    }
+                ],
+    "evidence_type":  "Detection"
+}

@@ -1,0 +1,23 @@
+﻿{
+    "seed_id":  "S002",
+    "ioc":  "101.42.108.164:31337",
+    "source":  "VirusTotal",
+    "record_type":  "details_whois",
+    "observed_at_utc":  "2026-09-30T09:04:08Z",
+    "registry":  "APNIC",
+    "asn":  "AS45090",
+    "netname":  "TENCENT-CN",
+    "organization":  "Tencent Cloud Computing (Beijing) Co., Ltd",
+    "inetnum":  "101.42.0.0 - 101.43.255.255",
+    "route":  "101.42.0.0/15",
+    "country":  "CN",
+    "status":  "ALLOCATED PORTABLE",
+    "last_modified_reported":  "2026-06-05T07:58:46Z",
+    "other_last_modified_reported":  [
+                                         "2020-07-22T13:10:59Z",
+                                         "2023-09-05T02:16:21Z",
+                                         "2020-02-24T07:34:27Z",
+                                         "2026-06-05T07:59:01Z"
+                                     ],
+    "notes":  "Multiple APNIC WHOIS records displayed in VirusTotal Details; timestamps are preserved separately. Hosting context only."
+}

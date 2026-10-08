@@ -1,0 +1,170 @@
+{
+  "generated_at_utc": "2026-10-01T11:08:16Z",
+  "scope": [
+    "S001",
+    "S002",
+    "S003",
+    "S004"
+  ],
+  "totals": {
+    "stix_objects": 5,
+    "infrastructure_nodes": 47,
+    "seed_anchors": 4,
+    "evidence_records": 12,
+    "entity_observations": 118,
+    "infrastructure_edges": 50,
+    "cluster_runs": 1,
+    "clusters": 0,
+    "cluster_memberships": 0,
+    "cluster_pair_scores": 6
+  },
+  "seeds": [
+    {
+      "seed_id": "S001",
+      "endpoint": "1.14.73.118:34091",
+      "first_seen_utc": "2026-09-05T11:35:01Z",
+      "last_seen_utc": null,
+      "observed_at_utc": "2026-09-30T07:09:23Z",
+      "source": "ThreatFox",
+      "source_reference": "https://threatfox.abuse.ch/ioc/1901253/",
+      "evidence_files": 3,
+      "observations": 13
+    },
+    {
+      "seed_id": "S002",
+      "endpoint": "101.42.108.164:31337",
+      "first_seen_utc": "2026-09-27T00:00:00Z",
+      "last_seen_utc": null,
+      "observed_at_utc": "2026-09-30T07:09:23Z",
+      "source": "ThreatFox",
+      "source_reference": "https://threatfox.abuse.ch/ioc/1939437/",
+      "evidence_files": 4,
+      "observations": 10
+    },
+    {
+      "seed_id": "S003",
+      "endpoint": "103.250.172.230:31337",
+      "first_seen_utc": "2026-09-02T00:00:00Z",
+      "last_seen_utc": null,
+      "observed_at_utc": "2026-09-30T07:09:23Z",
+      "source": "ThreatFox",
+      "source_reference": "https://threatfox.abuse.ch/ioc/1892696/",
+      "evidence_files": 4,
+      "observations": 91
+    },
+    {
+      "seed_id": "S004",
+      "endpoint": "103.253.42.61:31337",
+      "first_seen_utc": "2026-09-14T00:00:00Z",
+      "last_seen_utc": null,
+      "observed_at_utc": "2026-09-30T07:09:23Z",
+      "source": "ThreatFox",
+      "source_reference": "https://threatfox.abuse.ch/ioc/1917522/",
+      "evidence_files": 1,
+      "observations": 4
+    }
+  ],
+  "node_types": [
+    {
+      "node_type": "certificate-fingerprint",
+      "count": 10
+    },
+    {
+      "node_type": "domain-name",
+      "count": 9
+    },
+    {
+      "node_type": "file-hash-sha256",
+      "count": 1
+    },
+    {
+      "node_type": "ipv4-addr",
+      "count": 23
+    },
+    {
+      "node_type": "network-endpoint",
+      "count": 4
+    }
+  ],
+  "edge_statuses": [
+    {
+      "status": "candidate",
+      "count": 50
+    }
+  ],
+  "latest_run": {
+    "run_id": "cluster-run--10ecb9aca51ad06399350800406763fb9cd59e182e518344dabf5ca83d76e1ac",
+    "algorithm": "shared-observable-pairwise-v1",
+    "started_at_utc": "2026-09-30T13:33:59Z",
+    "completed_at_utc": "2026-09-30T13:33:59Z",
+    "status": "completed",
+    "parameters": {
+      "algorithm": "shared-observable-pairwise-v1",
+      "excluded_types": [
+        "ipv4-addr",
+        "ipv6-addr",
+        "network-endpoint"
+      ],
+      "score_formula": "1 - product(1 - unique observable weight)",
+      "threshold": 0.5,
+      "weights": {
+        "certificate-fingerprint": 0.65,
+        "domain-name": 0.35,
+        "file-hash-md5": 0.4,
+        "file-hash-sha1": 0.55,
+        "file-hash-sha256": 0.7
+      }
+    },
+    "candidate_clusters": 0
+  },
+  "pair_scores": [
+    {
+      "seed_a": "S001",
+      "seed_b": "S002",
+      "score": 0.0,
+      "status": "below_threshold",
+      "shared_count": 0,
+      "shared": []
+    },
+    {
+      "seed_a": "S001",
+      "seed_b": "S003",
+      "score": 0.0,
+      "status": "below_threshold",
+      "shared_count": 0,
+      "shared": []
+    },
+    {
+      "seed_a": "S001",
+      "seed_b": "S004",
+      "score": 0.0,
+      "status": "below_threshold",
+      "shared_count": 0,
+      "shared": []
+    },
+    {
+      "seed_a": "S002",
+      "seed_b": "S003",
+      "score": 0.0,
+      "status": "below_threshold",
+      "shared_count": 0,
+      "shared": []
+    },
+    {
+      "seed_a": "S002",
+      "seed_b": "S004",
+      "score": 0.0,
+      "status": "below_threshold",
+      "shared_count": 0,
+      "shared": []
+    },
+    {
+      "seed_a": "S003",
+      "seed_b": "S004",
+      "score": 0.0,
+      "status": "below_threshold",
+      "shared_count": 0,
+      "shared": []
+    }
+  ]
+}

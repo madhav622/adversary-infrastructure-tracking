@@ -1,0 +1,6 @@
+﻿"seed_id","ioc","ioc_type","source","source_reference","first_seen_utc","last_seen_utc","observed_at_utc","source_confidence_pct","source_confidence_label","reporter_visibility","asn","country","is_compromised","notes"
+"S001","1.14.73.118:34091","ip:port","ThreatFox","https://threatfox.abuse.ch/ioc/1901253/","2026-09-05T11:35:01Z","never","2026-09-30T07:09:23Z","75","elevated","private","TENCENT-NET-AP","CN","false","Sliver listing 2026-09-05; whoamix302"
+"S002","101.42.108.164:31337","ip:port","ThreatFox","https://threatfox.abuse.ch/ioc/1939437/","","","2026-09-30T07:09:23Z",,,,,,,"Sliver listing 2026-09-27; juroots"
+"S003","103.250.172.230:31337","ip:port","ThreatFox","https://threatfox.abuse.ch/ioc/1892696/","","","2026-09-30T07:09:23Z",,,,,,,"Sliver listing 2026-09-02; whoamix302"
+"S004","103.253.42.61:31337","ip:port","ThreatFox","https://threatfox.abuse.ch/ioc/1917522/","","","2026-09-30T07:09:23Z",,,,,,,"Sliver listing 2026-09-14; juroots"
+"S005","104.253.79.117:31337","ip:port","ThreatFox","https://threatfox.abuse.ch/ioc/1917532/","","","2026-09-30T07:09:23Z",,,,,,,"Sliver listing 2026-09-14; juroots"

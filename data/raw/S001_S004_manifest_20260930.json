@@ -1,0 +1,74 @@
+﻿[
+    {
+        "file_name":  "S001_communicating_file_9f79d28e3aa06aa5a68614a0855e2a782029801fc9215faa3308d844ab1d61d3.json",
+        "size_bytes":  681,
+        "sha256":  "311DA7810AE6D7C6C162B4E757A7B8D51BCE02E24138E2A167CFDAB08F11B719",
+        "last_modified":  "2026-09-30T13:50:13.5527805+05:30"
+    },
+    {
+        "file_name":  "S001_file_relations_20260930.json",
+        "size_bytes":  1137,
+        "sha256":  "872BC3C48CF3135250F1E421CE6A7EA5B47CFF82566141D3931CEB69CD37729A",
+        "last_modified":  "2026-09-30T13:54:04.0426192+05:30"
+    },
+    {
+        "file_name":  "S001_virustotal_whois_20260930.json",
+        "size_bytes":  670,
+        "sha256":  "CCC0C3406068949B2BC3BC4847A8F3590394D9DB7CB37FB190E1C49C601B53FC",
+        "last_modified":  "2026-09-30T13:45:25.6156771+05:30"
+    },
+    {
+        "file_name":  "S002_shodan_20260930.json",
+        "size_bytes":  1191,
+        "sha256":  "542EA129DF4138A394D607666E6C496E0B1F46BF8EFAFE1CC56D8AC583B7F49B",
+        "last_modified":  "2026-09-30T14:41:27.0952664+05:30"
+    },
+    {
+        "file_name":  "S002_virustotal_comment_20260930.json",
+        "size_bytes":  667,
+        "sha256":  "7E3C68BDEC001B02B0CE6BF111264E5D239D7F679DA0D0369092EDAC3971EA6B",
+        "last_modified":  "2026-09-30T14:37:32.2713601+05:30"
+    },
+    {
+        "file_name":  "S002_virustotal_details_whois_20260930.json",
+        "size_bytes":  1017,
+        "sha256":  "A0FB513348A97F3A3D3B52A2CDEFCCD6067D0634CFD0D58476F11F2A622638C8",
+        "last_modified":  "2026-09-30T14:34:08.8901714+05:30"
+    },
+    {
+        "file_name":  "S002_virustotal_whois_20260930.json",
+        "size_bytes":  636,
+        "sha256":  "13A0F01EFE3C8B13DF934BEE0C324DCB8C7DCF353E0A71EEAC69DBA367D46EF6",
+        "last_modified":  "2026-09-30T14:08:10.4734079+05:30"
+    },
+    {
+        "file_name":  "S003_luode_vip_relations_20260930.json",
+        "size_bytes":  6891,
+        "sha256":  "99BD06332CA71D1115968CA874DF04E77366E6FEF5699ECA824B386A2D677D7A",
+        "last_modified":  "2026-09-30T15:03:06.1717513+05:30"
+    },
+    {
+        "file_name":  "S003_virustotal_certificates_20260930.json",
+        "size_bytes":  2116,
+        "sha256":  "B7701FAA3F5E9D6E66383C04601C5A8ED122B8D1A55FD07B4C102F3A6E713552",
+        "last_modified":  "2026-09-30T14:51:17.1239241+05:30"
+    },
+    {
+        "file_name":  "S003_virustotal_relations_20260930.json",
+        "size_bytes":  963,
+        "sha256":  "3FB260A9C656BEDA8FFC8BF15FE527F71C06445E8D38ACD5210121033704F1CC",
+        "last_modified":  "2026-09-30T14:54:09.8999059+05:30"
+    },
+    {
+        "file_name":  "S003_virustotal_whois_20260930.json",
+        "size_bytes":  2134,
+        "sha256":  "0BD587F85EE9E5FBD9BE5BDD722A18FB1869FE25E4C13C5723EE161BB8E9D3D1",
+        "last_modified":  "2026-09-30T14:51:59.6420455+05:30"
+    },
+    {
+        "file_name":  "S004_detection_20260930.json",
+        "size_bytes":  1423,
+        "sha256":  "F506CD5D40A8170B211012D1043DFE74C3EE0FC52F6AD4F4839538BDC67D2984",
+        "last_modified":  "2026-09-30T15:04:22.5611222+05:30"
+    }
+]

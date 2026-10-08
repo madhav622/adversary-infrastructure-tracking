@@ -1,0 +1,13 @@
+﻿{
+    "seed_id":  "S001",
+    "file_sha256":  "9f79d28e3aa06aa5a68614a0855e2a782029801fc9215faa3308d844ab1d61d3",
+    "source":  "VirusTotal",
+    "source_reference":  "https://www.virustotal.com/gui/file/9f79d28e3aa06aa5a68614a0855e2a782029801fc9215faa3308d844ab1d61d3",
+    "relation":  "communicating_file",
+    "detections":  "35/69",
+    "popular_threat_label":  "trojan.sliver/dump",
+    "threat_categories":  "trojan,hacktool",
+    "family_labels":  "sliver,dump,marte",
+    "observed_at_utc":  "2026-09-30T08:20:13Z",
+    "notes":  "Existing VirusTotal metadata only; file not downloaded or executed. File-to-IP relationship requires further validation."
+}

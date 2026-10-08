@@ -1,0 +1,25 @@
+﻿{
+    "seed_id":  "S001",
+    "source":  "VirusTotal",
+    "parent_file_sha256":  "9f79d28e3aa06aa5a68614a0855e2a782029801fc9215faa3308d844ab1d61d3",
+    "observed_at_utc":  "2026-09-30T08:24:01Z",
+    "bundled_files_count":  17,
+    "contacted_ips":  [
+                          {
+                              "ip":  "1.14.73.118",
+                              "detections":  "7/91",
+                              "interpretation":  "Original seed IP",
+                              "asn":  "AS45090",
+                              "country":  "CN"
+                          },
+                          {
+                              "interpretation":  "Shared infrastructure; not a cluster link",
+                              "asn":  "AS13335",
+                              "ip":  "162.159.36.2",
+                              "network_owner":  "Cloudflare",
+                              "detections":  "0/91",
+                              "country":  "Not shown"
+                          }
+                      ],
+    "notes":  "Passive VirusTotal relation metadata only. No files downloaded."
+}

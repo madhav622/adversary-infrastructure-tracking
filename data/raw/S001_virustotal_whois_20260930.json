@@ -1,0 +1,17 @@
+﻿{
+    "last_updated_reported":  "2021-10-24",
+    "notes":  "Historical hosting context only; does not establish C2 operator or actor attribution.",
+    "origin_as":  "AS45090",
+    "netname":  "TencentCloud",
+    "seed_id":  "S001",
+    "observed_at_utc":  "2026-09-30T08:15:25Z",
+    "registry":  "APNIC",
+    "source":  "VirusTotal",
+    "status":  "ALLOCATED PORTABLE",
+    "ioc":  "1.14.73.118:34091",
+    "updated_date_reported":  "2020-02-25T01:10:58Z",
+    "inetnum":  "1.12.0.0 - 1.15.255.255",
+    "route":  "1.12.0.0/14",
+    "record_type":  "historical_whois",
+    "source_reference":  "VirusTotal IP Relations \u003e Historical Whois"
+}

@@ -1,0 +1,16 @@
+﻿{
+    "seed_id":  "S002",
+    "source":  "VirusTotal",
+    "record_type":  "community_comment",
+    "username":  "JaffaCakes118",
+    "comment_age_as_displayed":  "2 days ago",
+    "ioc":  "101.42.108.164:31337",
+    "threat_type":  "botnet_cc",
+    "malware":  "Sliver",
+    "quoted_confidence_pct":  50,
+    "referenced_source":  "ThreatFox",
+    "referenced_ioc_url":  "https://threatfox.abuse.ch/ioc/1939437/",
+    "referenced_shodan_url":  "hxxps://www[.]shodan.io/host/101.42.108.164#31337",
+    "observed_at_utc":  "2026-09-30T09:07:32Z",
+    "notes":  "Community comment repeats ThreatFox IOC information; not independent corroboration."
+}

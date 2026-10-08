@@ -1,0 +1,23 @@
+﻿{
+    "seed_id":  "S003",
+    "source":  "VirusTotal",
+    "record_type":  "relations",
+    "observed_at_utc":  "2026-09-30T09:24:08Z",
+    "passive_dns":  [
+                        {
+                            "domain":  "luode.vip",
+                            "detections":  "0/91",
+                            "resolved_date":  "2026-05-04",
+                            "resolver":  "VirusTotal"
+                        }
+                    ],
+    "files_referring":  [
+                            {
+                                "scanned_date":  "2026-09-20",
+                                "detections":  "0/62",
+                                "filename":  "ut1-phishing.txt",
+                                "sha256":  null
+                            }
+                        ],
+    "notes":  "Passive DNS association and referring-file metadata. No file downloaded. DNS and certificate observations may be correlated."
+}

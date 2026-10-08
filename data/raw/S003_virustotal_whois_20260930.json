@@ -1,0 +1,42 @@
+﻿{
+    "seed_id":  "S003",
+    "ioc":  "103.250.172.230:31337",
+    "source":  "VirusTotal",
+    "record_type":  "historical_whois_snapshots",
+    "observed_at_utc":  "2026-09-30T09:21:59Z",
+    "records":  [
+                    {
+                        "displayed_date":  "2026-08-25",
+                        "inetnum":  "103.250.172.0 - 103.250.175.255",
+                        "netname":  "STUB-103-250-172SLASH22",
+                        "registrant_country":  "ZZ",
+                        "status":  "ALLOCATED PORTABLE",
+                        "updated_date":  "2019-09-23T04:53:33Z",
+                        "registry":  "APNIC",
+                        "transfer_note":  "Transferred to RIPE region on 2025-09-09"
+                    },
+                    {
+                        "displayed_date":  "2026-05-04",
+                        "inetnum":  "103.250.172.0 - 103.250.173.255",
+                        "netname":  "cloudleadinno-V4-1",
+                        "organization":  "CloudLeadInno Network Technology Limited",
+                        "registrant_country":  "HK",
+                        "route":  "103.250.172.0/23",
+                        "origin_as":  "AS62468",
+                        "creation_date":  "2026-04-16T10:52:00Z",
+                        "updated_date":  "2026-04-16T10:52:00Z",
+                        "registry":  "RIPE",
+                        "status":  "ASSIGNED PA"
+                    },
+                    {
+                        "displayed_date":  "2024-11-03",
+                        "inetnum":  "103.250.172.0 - 103.250.172.255",
+                        "netname":  "ACCESSNETLLC-JP",
+                        "registrant_country":  "JP",
+                        "updated_date":  "2013-07-18T03:02:13Z",
+                        "registry":  "APNIC",
+                        "status":  "ALLOCATED NON-PORTABLE"
+                    }
+                ],
+    "notes":  "Historical WHOIS observations. Different registry records and displayed dates must not be interpreted as proof of operator identity or actor attribution."
+}

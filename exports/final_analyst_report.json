@@ -1,0 +1,1449 @@
+{
+  "generated_at_utc": "2026-10-01T11:08:16Z",
+  "scope": [
+    "S001",
+    "S002",
+    "S003",
+    "S004"
+  ],
+  "database": "database/intel.db",
+  "totals": {
+    "alert_records": 43,
+    "cluster_memberships": 0,
+    "cluster_pair_scores": 6,
+    "cluster_runs": 1,
+    "clusters": 0,
+    "entity_observations": 118,
+    "evidence_records": 12,
+    "infrastructure_edges": 50,
+    "infrastructure_nodes": 47,
+    "seed_anchors": 4,
+    "stix_objects": 5
+  },
+  "node_types": [
+    {
+      "node_type": "certificate-fingerprint",
+      "count": 10
+    },
+    {
+      "node_type": "domain-name",
+      "count": 9
+    },
+    {
+      "node_type": "file-hash-sha256",
+      "count": 1
+    },
+    {
+      "node_type": "ipv4-addr",
+      "count": 23
+    },
+    {
+      "node_type": "network-endpoint",
+      "count": 4
+    }
+  ],
+  "edge_statuses": [
+    {
+      "status": "candidate",
+      "count": 50
+    }
+  ],
+  "seeds": [
+    {
+      "seed_id": "S001",
+      "endpoint": "1.14.73.118:34091",
+      "first_seen_utc": "2026-09-05T11:35:01Z",
+      "last_seen_utc": null,
+      "observed_at_utc": "2026-09-30T07:09:23Z",
+      "source": "ThreatFox",
+      "source_reference": "https://threatfox.abuse.ch/ioc/1901253/",
+      "evidence_count": 3,
+      "observation_count": 13
+    },
+    {
+      "seed_id": "S002",
+      "endpoint": "101.42.108.164:31337",
+      "first_seen_utc": "2026-09-27T00:00:00Z",
+      "last_seen_utc": null,
+      "observed_at_utc": "2026-09-30T07:09:23Z",
+      "source": "ThreatFox",
+      "source_reference": "https://threatfox.abuse.ch/ioc/1939437/",
+      "evidence_count": 4,
+      "observation_count": 10
+    },
+    {
+      "seed_id": "S003",
+      "endpoint": "103.250.172.230:31337",
+      "first_seen_utc": "2026-09-02T00:00:00Z",
+      "last_seen_utc": null,
+      "observed_at_utc": "2026-09-30T07:09:23Z",
+      "source": "ThreatFox",
+      "source_reference": "https://threatfox.abuse.ch/ioc/1892696/",
+      "evidence_count": 4,
+      "observation_count": 91
+    },
+    {
+      "seed_id": "S004",
+      "endpoint": "103.253.42.61:31337",
+      "first_seen_utc": "2026-09-14T00:00:00Z",
+      "last_seen_utc": null,
+      "observed_at_utc": "2026-09-30T07:09:23Z",
+      "source": "ThreatFox",
+      "source_reference": "https://threatfox.abuse.ch/ioc/1917522/",
+      "evidence_count": 1,
+      "observation_count": 4
+    }
+  ],
+  "latest_cluster_run": {
+    "run_id": "cluster-run--10ecb9aca51ad06399350800406763fb9cd59e182e518344dabf5ca83d76e1ac",
+    "algorithm": "shared-observable-pairwise-v1",
+    "status": "completed",
+    "started_at_utc": "2026-09-30T13:33:59Z",
+    "completed_at_utc": "2026-09-30T13:33:59Z",
+    "parameters": {
+      "algorithm": "shared-observable-pairwise-v1",
+      "excluded_types": [
+        "ipv4-addr",
+        "ipv6-addr",
+        "network-endpoint"
+      ],
+      "score_formula": "1 - product(1 - unique observable weight)",
+      "threshold": 0.5,
+      "weights": {
+        "certificate-fingerprint": 0.65,
+        "domain-name": 0.35,
+        "file-hash-md5": 0.4,
+        "file-hash-sha1": 0.55,
+        "file-hash-sha256": 0.7
+      }
+    },
+    "candidate_cluster_count": 0
+  },
+  "pair_scores": [
+    {
+      "seed_a": "S001",
+      "seed_b": "S002",
+      "score": 0.0,
+      "status": "below_threshold",
+      "shared_observables": []
+    },
+    {
+      "seed_a": "S001",
+      "seed_b": "S003",
+      "score": 0.0,
+      "status": "below_threshold",
+      "shared_observables": []
+    },
+    {
+      "seed_a": "S001",
+      "seed_b": "S004",
+      "score": 0.0,
+      "status": "below_threshold",
+      "shared_observables": []
+    },
+    {
+      "seed_a": "S002",
+      "seed_b": "S003",
+      "score": 0.0,
+      "status": "below_threshold",
+      "shared_observables": []
+    },
+    {
+      "seed_a": "S002",
+      "seed_b": "S004",
+      "score": 0.0,
+      "status": "below_threshold",
+      "shared_observables": []
+    },
+    {
+      "seed_a": "S003",
+      "seed_b": "S004",
+      "score": 0.0,
+      "status": "below_threshold",
+      "shared_observables": []
+    }
+  ],
+  "clusters": [],
+  "alert_summary": {
+    "total": 43,
+    "by_status": {
+      "new": 42,
+      "triaged": 1
+    },
+    "by_severity": {
+      "informational": 43
+    },
+    "by_eligibility": {
+      "eligible": 28,
+      "excluded": 15
+    }
+  },
+  "alerts": [
+    {
+      "alert_id": "alert--1d177d88bb14f27e6c38db52106ea256197d3249590c11dbb7191c06550b2d0f",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S001",
+      "node_id": "observable--c9708b2b980a6e3f1d1f3b4120db7a65e7295716a7dc0d4b7690341250de628f",
+      "node_type": "ipv4-addr",
+      "observable": "1.12.0.0",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "excluded",
+      "eligibility_reason": "Retired: value came only from WHOIS/network allocation fields; ranges and boundaries are not host IPs.",
+      "first_observed_utc": "2026-09-30T08:15:25Z",
+      "last_observed_utc": "2026-09-30T08:15:25Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 1.12.0.0 found in the current evidence set for S001.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--26c061986bf8cd090531f410e1d03decf6561c32c9e6b9bcbfabb130944fe13b"
+      ],
+      "sources": [
+        "VirusTotal"
+      ]
+    },
+    {
+      "alert_id": "alert--2239010baec21defbb1229e948b31c52a430802631cfc59d54021ebec551e9e3",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S001",
+      "node_id": "observable--b4202068e3e56c4a14e1399036ca364127f0669de869cd1225ad34e3ed8adcec",
+      "node_type": "domain-name",
+      "observable": "trojan.sliver",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "excluded",
+      "eligibility_reason": "Retired: detection/threat label is metadata, not a domain or infrastructure observable.",
+      "first_observed_utc": "2026-09-30T08:20:13Z",
+      "last_observed_utc": "2026-09-30T08:20:13Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable trojan.sliver found in the current evidence set for S001.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--491169c156e46b94a86e64efc78991380875724c94c413a0d3c5acd355a2787b"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--4854d69b50695583f00037622134ae774f7fcdf21190351069bdb278a5774133",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S001",
+      "node_id": "observable--102a8ef92f69b9601039a93579090e58017db3f70979c24754ffcab39caf8efb",
+      "node_type": "file-hash-sha256",
+      "observable": "9f79d28e3aa06aa5a68614a0855e2a782029801fc9215faa3308d844ab1d61d3",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T08:20:13Z",
+      "last_observed_utc": "2026-09-30T08:24:01Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 9f79d28e3aa06aa5a68614a0855e2a782029801fc9215faa3308d844ab1d61d3 found in the current evidence set for S001.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--03259d703872679393a4fc79efed7ee5682ba771a2056d2f01413e02b6902f87",
+        "evidence--491169c156e46b94a86e64efc78991380875724c94c413a0d3c5acd355a2787b"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--8d28488b522d24e0296d78824893ea1a7815dc38a31255c8fec8da730c5dae44",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S001",
+      "node_id": "observable--9302032e2f2b586756c440675bf9fdfdb7b14f5d41b891608d5d5268ebfab3c6",
+      "node_type": "ipv4-addr",
+      "observable": "162.159.36.2",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "excluded",
+      "eligibility_reason": "Cloudflare shared proxy/anycast address range; shared service address is not a unique host pivot.",
+      "first_observed_utc": "2026-09-30T08:24:01Z",
+      "last_observed_utc": "2026-09-30T08:24:01Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 162.159.36.2 found in the current evidence set for S001.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--03259d703872679393a4fc79efed7ee5682ba771a2056d2f01413e02b6902f87"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--bb282dce9b4d903ef0cf128bf709ad643c129995978217cda1974c6ddf008617",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S001",
+      "node_id": "observable--b0daa985b8097c9f1bc41e8dc1d3e79aec3de493bdfa97282f78d2ed60924ff9",
+      "node_type": "ipv4-addr",
+      "observable": "1.15.255.255",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "excluded",
+      "eligibility_reason": "Retired: value came only from WHOIS/network allocation fields; ranges and boundaries are not host IPs.",
+      "first_observed_utc": "2026-09-30T08:15:25Z",
+      "last_observed_utc": "2026-09-30T08:15:25Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 1.15.255.255 found in the current evidence set for S001.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--26c061986bf8cd090531f410e1d03decf6561c32c9e6b9bcbfabb130944fe13b"
+      ],
+      "sources": [
+        "VirusTotal"
+      ]
+    },
+    {
+      "alert_id": "alert--00f92b33ea4f748bdc6a7128b7a18ad74ffb8dceb8f13a25ed75c0b741227c89",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S002",
+      "node_id": "observable--4c02a4701967f9deaef5f70a5e08261b8b910d025966cf6e9076eda84614b8a9",
+      "node_type": "ipv4-addr",
+      "observable": "101.43.255.255",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "triaged",
+      "eligibility": "excluded",
+      "eligibility_reason": "Retired: value came only from WHOIS/network allocation fields; ranges and boundaries are not host IPs.",
+      "first_observed_utc": "2026-09-30T08:38:10Z",
+      "last_observed_utc": "2026-09-30T09:04:08Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 101.43.255.255 found in the current evidence set for S002.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": "2026-09-30T20:06:02.332571Z",
+      "triaged_by": "local-analyst",
+      "resolution_note": "Alert reviewed and triaged for testing",
+      "updated_at_utc": "2026-09-30T20:06:02.332571Z",
+      "evidence_ids": [
+        "evidence--5cad6c6850aab31eabc5ca58c534bc694b9bbc942cb29f7c575831df6506071d",
+        "evidence--cd351a060c2cd2e0b4ff566d5bf576c026c2c619af642cb6a7881debd76bb0a3"
+      ],
+      "sources": [
+        "VirusTotal"
+      ]
+    },
+    {
+      "alert_id": "alert--00febaa8edcb15d0e16cbeed476ab2d0a905d1fc5d2d319e32276885a9993987",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S002",
+      "node_id": "observable--c8c9a22ea72ac48c2051e3af96c9a7be18c9970b21cfb2424b311e7c3e7b67e6",
+      "node_type": "ipv4-addr",
+      "observable": "101.42.0.0",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "excluded",
+      "eligibility_reason": "Retired: value came only from WHOIS/network allocation fields; ranges and boundaries are not host IPs.",
+      "first_observed_utc": "2026-09-30T08:38:10Z",
+      "last_observed_utc": "2026-09-30T09:04:08Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 101.42.0.0 found in the current evidence set for S002.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--5cad6c6850aab31eabc5ca58c534bc694b9bbc942cb29f7c575831df6506071d",
+        "evidence--cd351a060c2cd2e0b4ff566d5bf576c026c2c619af642cb6a7881debd76bb0a3"
+      ],
+      "sources": [
+        "VirusTotal"
+      ]
+    },
+    {
+      "alert_id": "alert--0a61ed5600945b0584124a0b324b9d4769106c62187e6636d48e3df6b3b43e6b",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--6a6b2b61e5e887587bbb44e64f14909b4e4161df0fc30e23ba0515a759e79642",
+      "node_type": "ipv4-addr",
+      "observable": "104.21.9.123",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "excluded",
+      "eligibility_reason": "Cloudflare shared proxy/anycast address range; shared service address is not a unique host pivot.",
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 104.21.9.123 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--0afd64ac2cb1c5544b46f7111842141c2417700443f3d54edde98f04370b78d7",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--b0b827b43c29760bfd807698a97d11e733dfc5e636c3e201dc4f3a0912e87174",
+      "node_type": "certificate-fingerprint",
+      "observable": "41cf6ff51b64be25b8e01b0878840990352e9968",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 41cf6ff51b64be25b8e01b0878840990352e9968 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--0c7e35925c3c708ecc494fd0b6d8c9b536ae3967825f2d02fe1aa129cad8483d",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--01da0d740655b236123e00064d319afbf3bf34c88f03269f3f6acb36bde8a930",
+      "node_type": "certificate-fingerprint",
+      "observable": "900344d6d8a7e8de7f52c16c516e2322b33251f3",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 900344d6d8a7e8de7f52c16c516e2322b33251f3 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--13ac71c7776b20b36c376c6234db8a3917f12aaf45550da0fac2a4f36ab74dd7",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--76c62eeecb6ed4c27b4f8802b75e6fdb057d4d989c8f3cc9fbebe29458912f26",
+      "node_type": "ipv4-addr",
+      "observable": "43.228.206.11",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 43.228.206.11 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--14a678abbb38f697e80889f90a533076bdfdcd83d25570f6ca5eba352f8a5752",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--f3c1026f5c6cafe744297c483bcfcf361ace5abf19beabcd47b17f83875c19e0",
+      "node_type": "ipv4-addr",
+      "observable": "38.76.188.122",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 38.76.188.122 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--16be86bd6641d46033eb7171a51420d439a85ddd6a547466286a1beaeb0cda94",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--2b21d4db59a3ef48a2db572602558521b2dc29a97fd5c786a55e9b9d291e4126",
+      "node_type": "ipv4-addr",
+      "observable": "192.238.204.29",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 192.238.204.29 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--18094e56dae945e4ba578fe9a58e98e43a093b5a3f1d719be8788427d030aa21",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--34ceb4fd6d483d0f8340597347d8345293347cb53592bc2a09ed660606871bee",
+      "node_type": "ipv4-addr",
+      "observable": "156.245.248.152",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 156.245.248.152 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--19aac800722088cea4d58e3503f87838421c922a69a9d4461bcd0a1a1dcdc626",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--68ce801f0b7d4f3c31c6798872f3809b7596ab4fa758706a8908d16f4585c693",
+      "node_type": "certificate-fingerprint",
+      "observable": "76681564cdd83bad65263f389cb5d657ec8d4f6b",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:21:17Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 76681564cdd83bad65263f389cb5d657ec8d4f6b found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841",
+        "evidence--5be0d85df7c66aae7245c69566cc0967888648f68bc3c2debf0cb7da4ebe1120"
+      ],
+      "sources": [
+        "VirusTotal",
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--3e504bfccc2d22cb71e892bebbd33ba92a9b9af570d0759f79897ddf678c744a",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--443753b049f6d38efb9c02ace97b3bd306e74a90742c63bc480f13238e1b39e4",
+      "node_type": "ipv4-addr",
+      "observable": "118.193.40.16",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 118.193.40.16 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--3efbcbe9a35862ed3e163dfc766583d48728fababb6f51adf1f2d9b4adcd44ff",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--9d65807a69f469c1d966312f4a1724bd568f1ed9254bef1d8f0ed0c95ab3b17a",
+      "node_type": "ipv4-addr",
+      "observable": "38.76.172.60",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 38.76.172.60 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--41dad87794afa54f5f7748b9cdbc7367cb4a3d46656cbe5d393285e410b22426",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--2ac18255291c653045bb22319b19fd8b501c13989ddaebc50220124f8ae02319",
+      "node_type": "domain-name",
+      "observable": "x.luode.vip",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable x.luode.vip found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--691cdc1797e13a2116f24d94f1c6b9d023fa81539c7f273e513ee0ad978e6b65",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--6a2a44b67ff2e1364547321da4f4b237fb905b548915f1cd20240e4376e5476e",
+      "node_type": "certificate-fingerprint",
+      "observable": "f636db17b6bf640b38bcd64c832e6e6c9405ccef",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:21:17Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable f636db17b6bf640b38bcd64c832e6e6c9405ccef found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841",
+        "evidence--5be0d85df7c66aae7245c69566cc0967888648f68bc3c2debf0cb7da4ebe1120"
+      ],
+      "sources": [
+        "VirusTotal",
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--6d5abbc7194c7f8107ea0945b85e8dfd8ea66ff5eef95ce15402c730ff2c5b0f",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--35ded29caf00c8782b1f6724825269fdb18968c449c5402bf8007d8fb621a909",
+      "node_type": "certificate-fingerprint",
+      "observable": "2194e61797945a3650ae0ee13f7ba433b0da3330",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 2194e61797945a3650ae0ee13f7ba433b0da3330 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--6e3e7dd72b603e804928d83dcfb808a0231e251751a623efd65ae7c37f5b9d59",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--97f7ff478330d1861cb1a1fa8787c871d10fdd0b2e42e138bb102373e5ffc588",
+      "node_type": "ipv4-addr",
+      "observable": "207.56.229.121",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 207.56.229.121 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--6f6619e064f5fec7f850bd9063e4a3ffabd66b2db0405f2e6099f0f462d4f81d",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--8b0b0d9ba84b665cfd01c7e628bab1ddc2106198df91b8440d7547e834056e11",
+      "node_type": "certificate-fingerprint",
+      "observable": "0e900e8ad7cd39279d9c782fe5279c443033982a",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 0e900e8ad7cd39279d9c782fe5279c443033982a found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--713f8f607371c9d4a868048a796829c246c5d47d4698cc54440731c666e684ba",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--ca6f0e9101e3577fb5082a002361e4e6636bb1789b3cb5c32923c17b7a78d421",
+      "node_type": "certificate-fingerprint",
+      "observable": "94ac9654637c37b672d360a8ba73e4e3c23f5214",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 94ac9654637c37b672d360a8ba73e4e3c23f5214 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--725e077189fac68b1cef415c95848f880a1a859221ee34dc446b406c0ca08f38",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--5274be55b2f50041af743fbd5933b3d2a656ef6605ffe30865e616ad299f526c",
+      "node_type": "certificate-fingerprint",
+      "observable": "18709c4151f667fe9422ee2cc7c64a5899743c52",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 18709c4151f667fe9422ee2cc7c64a5899743c52 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--79e4ee9c631d830eef741ace6c7dde630460e0982d5b1c120ef8a5857c42d4b2",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--b58bc2adaa24da6ac35383aa6067d1d09dc9593f895e7d1997918f9350e3c6b9",
+      "node_type": "ipv4-addr",
+      "observable": "103.250.172.0",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "excluded",
+      "eligibility_reason": "Retired: value came only from WHOIS/network allocation fields; ranges and boundaries are not host IPs.",
+      "first_observed_utc": "2026-09-30T09:21:59Z",
+      "last_observed_utc": "2026-09-30T09:21:59Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 103.250.172.0 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--023d802a90a413be000ce69e904c9acebc29e2e93ffe7d9c49eb4302e9eba53e"
+      ],
+      "sources": [
+        "VirusTotal"
+      ]
+    },
+    {
+      "alert_id": "alert--7fdeb59f65614e8f8d6d69d0dc746d2977c08b15db1c1c0d0d402308fd621e4b",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--45e257239b9dc57973ad3ba0870405edba332cf2b2ac874c495dcaf2785e2833",
+      "node_type": "ipv4-addr",
+      "observable": "103.250.175.255",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "excluded",
+      "eligibility_reason": "Retired: value came only from WHOIS/network allocation fields; ranges and boundaries are not host IPs.",
+      "first_observed_utc": "2026-09-30T09:21:59Z",
+      "last_observed_utc": "2026-09-30T09:21:59Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 103.250.175.255 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--023d802a90a413be000ce69e904c9acebc29e2e93ffe7d9c49eb4302e9eba53e"
+      ],
+      "sources": [
+        "VirusTotal"
+      ]
+    },
+    {
+      "alert_id": "alert--95318913039dfb0a2dbe4fb279e09d3f5972d92e4b49b9b9c6300f2af0fba59f",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--2a2863e982ed253593a312446d8aec8b92f2980402b748b5b2bf92a24083481a",
+      "node_type": "ipv4-addr",
+      "observable": "103.250.173.255",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "excluded",
+      "eligibility_reason": "Retired: value came only from WHOIS/network allocation fields; ranges and boundaries are not host IPs.",
+      "first_observed_utc": "2026-09-30T09:21:59Z",
+      "last_observed_utc": "2026-09-30T09:21:59Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 103.250.173.255 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--023d802a90a413be000ce69e904c9acebc29e2e93ffe7d9c49eb4302e9eba53e"
+      ],
+      "sources": [
+        "VirusTotal"
+      ]
+    },
+    {
+      "alert_id": "alert--972b809c49a65e8c4b5c1e5ca7bd26287ce63bb3ae1552240d98918319f93e25",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--b4067d0fc21b13d8c18a40f87f5e049cd560a25179b97610c8aff8e20495497e",
+      "node_type": "ipv4-addr",
+      "observable": "172.81.101.229",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 172.81.101.229 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--97cc3cc882c79752c3f2aaeb31cceaa94f4068a5c46cbbc491b7a54f1b724f60",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--d07c680681f6738d487dbf87335d6478ab9be7fb9b4c4e9bb91c8cf2ff815eba",
+      "node_type": "certificate-fingerprint",
+      "observable": "aaa570bb273a37c2f877938139331e158f1de9cf",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable aaa570bb273a37c2f877938139331e158f1de9cf found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--9a3e39f2c6bf3613a33a1ea31154d9b301a0414cdccb43550a7183a3351dac2e",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--a6b11c3d277fe3adcaa898925c8e0d790b45a23b236b1c914221bdf7e5fffffd",
+      "node_type": "domain-name",
+      "observable": "www.luode.vip",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable www.luode.vip found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--a3eedaa8d82af53fb37033e049dca8f774e5bd67df4426bcb81acdca870ccf3f",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--305ce9cb9337637aaeeb22bfe9d4e30eb6c79eb6c754d59e06550daa179c67e9",
+      "node_type": "certificate-fingerprint",
+      "observable": "987bd1a8a78e437766a42f3d32c546dac4edcc30",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 987bd1a8a78e437766a42f3d32c546dac4edcc30 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--bef22f1c6de8122e8aafef4e0b9818830c81605bf8d343dd7737acb039d2c868",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--80959013543b95364827c8a4d0851d0964759334f029af82d41c3335212abb1e",
+      "node_type": "domain-name",
+      "observable": "ut1-phishing.txt",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "excluded",
+      "eligibility_reason": "Retired: filename was previously misclassified as a domain; filenames are metadata.",
+      "first_observed_utc": "2026-09-30T09:24:08Z",
+      "last_observed_utc": "2026-09-30T09:24:08Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable ut1-phishing.txt found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--3ae93a434013a15c79742a666b85b6d178655b601de13702855ee84e500159c2"
+      ],
+      "sources": [
+        "VirusTotal"
+      ]
+    },
+    {
+      "alert_id": "alert--c6bb0ae4c65851d0f2154f6859e31f136e7527b677021356b2c0573b6e99198c",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--78ceb0215e7c880a79e541d540f6fe6952af14f20699a09854a69185dceffbc9",
+      "node_type": "domain-name",
+      "observable": "btc.luode.vip",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable btc.luode.vip found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--c8bef806d92c53f5aa83249667b01fb3c6dc9ca5753c6415d72a3c41fdf27c52",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--0d083e6f99a7c763f59398db9d48011a3575fb7d924441d17ef626f997cc7af2",
+      "node_type": "ipv4-addr",
+      "observable": "38.76.189.178",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 38.76.189.178 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--ca3bc96eef109ff52574718cdb99b5a0f0c51afe83a8bd89d88cde4f227ca3ca",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--bb61a42ac87436b3d4096c3551e7c6b1a3e14a24cf500d82299e05525ae4460a",
+      "node_type": "ipv4-addr",
+      "observable": "103.250.172.255",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "excluded",
+      "eligibility_reason": "Retired: value came only from WHOIS/network allocation fields; ranges and boundaries are not host IPs.",
+      "first_observed_utc": "2026-09-30T09:21:59Z",
+      "last_observed_utc": "2026-09-30T09:21:59Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 103.250.172.255 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--023d802a90a413be000ce69e904c9acebc29e2e93ffe7d9c49eb4302e9eba53e"
+      ],
+      "sources": [
+        "VirusTotal"
+      ]
+    },
+    {
+      "alert_id": "alert--cb223899b453072a8423203f2fb551a91d16a77d90583b0fafd08122e7ce2301",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--12f5c38c109aef86c49b9cb0560cc6749dd1c58eb1066bf0abb22abb267ffbec",
+      "node_type": "domain-name",
+      "observable": "*.luode.vip",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:21:17Z",
+      "last_observed_utc": "2026-09-30T09:21:17Z",
+      "created_at_utc": "2026-09-30T21:35:56Z",
+      "lead_time_days": null,
+      "summary": "Observable *.luode.vip found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T21:35:56Z",
+      "evidence_ids": [
+        "evidence--5be0d85df7c66aae7245c69566cc0967888648f68bc3c2debf0cb7da4ebe1120"
+      ],
+      "sources": [
+        "VirusTotal"
+      ]
+    },
+    {
+      "alert_id": "alert--d00798549448f9a7398959ff52b2ba23fa5169bb161e9ca8963fab90cd000bbb",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--9e0815fa49ba8c7c41d60a5deeca2ae8ddbd43b2ce53f8fc2a396a4df8fa1830",
+      "node_type": "ipv4-addr",
+      "observable": "45.207.222.65",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 45.207.222.65 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--ef81ca276c3cc01a9d2e6ee800758f1fa183f486181927675f6b30ab89a67e00",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--5305ee16e04711acc9165fb82f2c3a01419692fb67cc811ca209e4015db0eef9",
+      "node_type": "domain-name",
+      "observable": "sql.luode.vip",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable sql.luode.vip found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--f216a14df43c016b45760d318db0e2d163721ecdfa96dffcae000129bfad0ffa",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--4ee4a3c9b15b377c3693526b6162ebcefc8f4432735b2699c3aa647b201831dd",
+      "node_type": "ipv4-addr",
+      "observable": "172.67.189.66",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "excluded",
+      "eligibility_reason": "Cloudflare shared proxy/anycast address range; shared service address is not a unique host pivot.",
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 172.67.189.66 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--f23e3bf8db59061830e326ad00da66ea9e51cc06e9a5f86344b69a0f5c022e3b",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--8856022b2c1de691a9d9a1ae81d12d286fe507dd97a4b924190ec9a7628938db",
+      "node_type": "ipv4-addr",
+      "observable": "103.24.216.93",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:33:06Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 103.24.216.93 found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--fdb1a282be8b3ec805c9046b573b1163b33c8c3247d8f5ec9407661b98f8815c",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S003",
+      "node_id": "observable--711855b5f3489a1296b06cbebda9fd90c4880523bad16b55349e8b33034469af",
+      "node_type": "domain-name",
+      "observable": "luode.vip",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "eligible",
+      "eligibility_reason": null,
+      "first_observed_utc": "2026-09-30T09:21:17Z",
+      "last_observed_utc": "2026-09-30T09:33:06Z",
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable luode.vip found in the current evidence set for S003.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--3ae93a434013a15c79742a666b85b6d178655b601de13702855ee84e500159c2",
+        "evidence--586d065ba387678639334f035c08c7f7f9291983d9a3ad15625de2427116f841",
+        "evidence--5be0d85df7c66aae7245c69566cc0967888648f68bc3c2debf0cb7da4ebe1120"
+      ],
+      "sources": [
+        "VirusTotal",
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--162972824f57e9ef69f65481c89c741116e47ae7ad69befd9665bd544eb7c869",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S004",
+      "node_id": "observable--82080959c8564895ed297588fe5b4214c842e906f80ee09f776de12e4ea23761",
+      "node_type": "ipv4-addr",
+      "observable": "103.253.40.0",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "excluded",
+      "eligibility_reason": "Retired: value came only from WHOIS/network allocation fields; ranges and boundaries are not host IPs.",
+      "first_observed_utc": null,
+      "last_observed_utc": null,
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable 103.253.40.0 found in the current evidence set for S004.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--1f107875efbb0ed87b18211a70648dbcdce0357233749337ec3516e92788dd6c"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    },
+    {
+      "alert_id": "alert--84f68a70b2f3d219aa7681ef30529e764cb7f2bbd25b7ba76a5f73ac4a729954",
+      "alert_type": "new_observable_in_dataset",
+      "seed_id": "S004",
+      "node_id": "observable--e86fd4235765d1eb5db67f2be354910128d0dc6c4a6d388b60783f25673a020e",
+      "node_type": "domain-name",
+      "observable": "alphamountain.ai",
+      "cluster_id": null,
+      "severity": "informational",
+      "status": "new",
+      "eligibility": "excluded",
+      "eligibility_reason": "Retired: vendor/engine name is metadata, not a domain observable.",
+      "first_observed_utc": null,
+      "last_observed_utc": null,
+      "created_at_utc": "2026-09-30T19:53:22Z",
+      "lead_time_days": null,
+      "summary": "Observable alphamountain.ai found in the current evidence set for S004.",
+      "rationale": "This alert records an observable present in the project's imported passive evidence. It does not mean the infrastructure is globally new or confirmed malicious. Initial severity is informational. Cluster association is populated only when exactly one candidate cluster membership is available. Lead time is unknown because no verified outcome timestamp is available.",
+      "triaged_at_utc": null,
+      "triaged_by": null,
+      "resolution_note": null,
+      "updated_at_utc": "2026-09-30T19:53:22Z",
+      "evidence_ids": [
+        "evidence--1f107875efbb0ed87b18211a70648dbcdce0357233749337ec3516e92788dd6c"
+      ],
+      "sources": [
+        "manual-collected"
+      ]
+    }
+  ],
+  "triage_history": [],
+  "limitations": [
+    "Alert presence indicates imported passive evidence, not globally new infrastructure.",
+    "Heuristic cluster scores are not probabilities.",
+    "No common-actor attribution is inferred.",
+    "Lead time is unknown without a verified outcome timestamp.",
+    "Blocked is a manual triage status, not an automated blocking action.",
+    "Source reliability grades are not configured."
+  ]
+}

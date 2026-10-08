@@ -1,0 +1,26 @@
+﻿{
+    "seed_id":  "S002",
+    "ioc":  "101.42.108.164:31337",
+    "source":  "Shodan",
+    "record_type":  "host_observation",
+    "source_reference":  "https://www.shodan.io/host/101.42.108.164",
+    "observed_at_utc":  "2026-09-30T09:11:27Z",
+    "shodan_timestamp_reported":  "2026-09-30T01:44:15",
+    "port":  31337,
+    "transport":  "tcp",
+    "product":  "Sliver C2",
+    "banner_hash":  "1563265241",
+    "tls_error":  "TLSV1_ALERT_PROTOCOL_VERSION",
+    "certificate":  {
+                        "version":  "V3",
+                        "serial":  "82b34210266901ec9f109fb3281f4698",
+                        "issuer":  "CN=operators",
+                        "subject":  "CN=multiplayer",
+                        "san":  "DNS:multiplayer",
+                        "not_before":  "2026-06-19T07:57:03Z",
+                        "not_after":  "2028-06-18T07:57:03Z",
+                        "signature_algorithm":  "ecdsa-with-SHA256",
+                        "public_key":  "ECDSA P-256"
+                    },
+    "notes":  "Existing Shodan observation only. No active probing performed. TLS fingerprint is a candidate pivot; no actor attribution."
+}

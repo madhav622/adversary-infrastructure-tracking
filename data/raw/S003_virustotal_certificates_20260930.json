@@ -1,0 +1,40 @@
+﻿{
+    "seed_id":  "S003",
+    "ioc":  "103.250.172.230:31337",
+    "source":  "VirusTotal",
+    "record_type":  "historical_ssl_certificates",
+    "observed_at_utc":  "2026-09-30T09:21:17Z",
+    "certificates":  [
+                         {
+                             "first_seen":  "2026-08-25",
+                             "subject":  "CN=luode.vip",
+                             "san":  [
+                                         "DNS:luode.vip",
+                                         "DNS:*.luode.vip"
+                                     ],
+                             "thumbprint":  "f636db17b6bf640b38bcd64c832e6e6c9405ccef",
+                             "serial":  "9e1230f16c245fc8a1b622f8f83b8e0c",
+                             "issuer":  "ZeroSSL ECC DV SSL CA 2",
+                             "not_before":  "2026-08-20T00:00:00Z",
+                             "not_after":  "2026-11-18T23:59:59Z",
+                             "public_key":  "EC secp256r1",
+                             "signature_oid":  "1.2.840.10045.4.3.2"
+                         },
+                         {
+                             "first_seen":  "2026-05-04",
+                             "subject":  "CN=luode.vip",
+                             "san":  [
+                                         "DNS:luode.vip",
+                                         "DNS:*.luode.vip"
+                                     ],
+                             "thumbprint":  "76681564cdd83bad65263f389cb5d657ec8d4f6b",
+                             "serial":  "5150d0b0ee4db28c51832f43408811f3",
+                             "issuer":  "ZeroSSL ECC DV SSL CA 2",
+                             "not_before":  "2026-04-29T00:00:00Z",
+                             "not_after":  "2026-07-28T23:59:59Z",
+                             "public_key":  "EC secp256r1",
+                             "signature_oid":  "1.2.840.10045.4.3.2"
+                         }
+                     ],
+    "notes":  "Two historical certificates for luode.vip; possible certificate rotation. No actor attribution."
+}

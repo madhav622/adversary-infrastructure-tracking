@@ -1,0 +1,36 @@
+﻿# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Secrets / environment
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Local database
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+
+# Backups
+backups/
+
+# Runtime / generated logs
+logs/
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Archived test artifacts
+data/archive/
+
+# Out-of-scope seed data
+data/raw/S005*.json

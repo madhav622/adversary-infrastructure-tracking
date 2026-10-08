@@ -1,0 +1,151 @@
+﻿{
+    "seed_id":  "S003",
+    "domain":  "luode.vip",
+    "source":  "VirusTotal",
+    "observed_at_utc":  "2026-09-30T09:33:06Z",
+    "passive_dns_reported_total":  15,
+    "passive_dns_visible_count":  10,
+    "passive_dns":  [
+                        {
+                            "date":  "2026-08-26",
+                            "ip":  "45.207.222.65",
+                            "detections":  "0/91",
+                            "resolver":  "VirusTotal"
+                        },
+                        {
+                            "date":  "2026-07-19",
+                            "ip":  "38.76.172.60",
+                            "detections":  "0/91",
+                            "resolver":  "VirusTotal"
+                        },
+                        {
+                            "date":  "2026-06-10",
+                            "ip":  "103.24.216.93",
+                            "detections":  "0/91",
+                            "resolver":  "Georgia Institute of Technology"
+                        },
+                        {
+                            "date":  "2026-05-07",
+                            "ip":  "38.76.189.178",
+                            "detections":  "0/91",
+                            "resolver":  "VirusTotal"
+                        },
+                        {
+                            "date":  "2026-05-05",
+                            "ip":  "38.76.188.122",
+                            "detections":  "0/91",
+                            "resolver":  "VirusTotal"
+                        },
+                        {
+                            "date":  "2026-05-05",
+                            "ip":  "207.56.229.121",
+                            "detections":  "0/91",
+                            "resolver":  "VirusTotal"
+                        },
+                        {
+                            "date":  "2026-05-04",
+                            "ip":  "103.250.172.230",
+                            "detections":  "12/91",
+                            "resolver":  "VirusTotal"
+                        },
+                        {
+                            "date":  "2026-04-05",
+                            "ip":  "172.81.101.229",
+                            "detections":  "1/91",
+                            "resolver":  "VirusTotal"
+                        },
+                        {
+                            "date":  "2026-03-27",
+                            "ip":  "156.245.248.152",
+                            "detections":  "0/91",
+                            "resolver":  "VirusTotal"
+                        },
+                        {
+                            "date":  "2025-07-07",
+                            "ip":  "192.238.204.29",
+                            "detections":  "0/91",
+                            "resolver":  "VirusTotal"
+                        }
+                    ],
+    "subdomains":  [
+                       {
+                           "name":  "x.luode.vip",
+                           "ips":  [
+                                       "118.193.40.16"
+                                   ]
+                       },
+                       {
+                           "name":  "sql.luode.vip",
+                           "ips":  [
+                                       "172.67.189.66",
+                                       "104.21.9.123"
+                                   ]
+                       },
+                       {
+                           "name":  "btc.luode.vip",
+                           "ips":  [
+                                       "172.67.189.66",
+                                       "104.21.9.123"
+                                   ]
+                       },
+                       {
+                           "name":  "www.luode.vip",
+                           "ips":  [
+                                       "43.228.206.11"
+                                   ]
+                       }
+                   ],
+    "historical_whois_dates":  [
+                                   "2026-09-30",
+                                   "2026-03-27",
+                                   "2025-07-07"
+                               ],
+    "registrar":  "Alibaba Cloud Computing Ltd. d/b/a HiChina",
+    "registrant_id":  "1f8f4166599d23ee",
+    "registrant_country":  "CN",
+    "ssl_reported_total":  13,
+    "ssl_visible_count":  10,
+    "ssl_certificates":  [
+                             {
+                                 "thumbprint":  "94ac9654637c37b672d360a8ba73e4e3c23f5214",
+                                 "date":  "2026-08-26"
+                             },
+                             {
+                                 "thumbprint":  "f636db17b6bf640b38bcd64c832e6e6c9405ccef",
+                                 "date":  "2026-08-25"
+                             },
+                             {
+                                 "thumbprint":  "2194e61797945a3650ae0ee13f7ba433b0da3330",
+                                 "date":  "2026-07-19"
+                             },
+                             {
+                                 "thumbprint":  "18709c4151f667fe9422ee2cc7c64a5899743c52",
+                                 "date":  "2026-05-07"
+                             },
+                             {
+                                 "thumbprint":  "900344d6d8a7e8de7f52c16c516e2322b33251f3",
+                                 "date":  "2026-05-05"
+                             },
+                             {
+                                 "thumbprint":  "0e900e8ad7cd39279d9c782fe5279c443033982a",
+                                 "date":  "2026-05-05"
+                             },
+                             {
+                                 "thumbprint":  "41cf6ff51b64be25b8e01b0878840990352e9968",
+                                 "date":  "2026-05-05"
+                             },
+                             {
+                                 "thumbprint":  "76681564cdd83bad65263f389cb5d657ec8d4f6b",
+                                 "date":  "2026-05-04"
+                             },
+                             {
+                                 "thumbprint":  "aaa570bb273a37c2f877938139331e158f1de9cf",
+                                 "date":  "2026-04-05"
+                             },
+                             {
+                                 "thumbprint":  "987bd1a8a78e437766a42f3d32c546dac4edcc30",
+                                 "date":  "2026-03-30"
+                             }
+                         ],
+    "notes":  "Only visible records from the supplied VirusTotal relations output were captured. Incomplete listings retained as partial evidence; associations do not establish common ownership."
+}

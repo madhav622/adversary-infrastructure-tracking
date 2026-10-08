@@ -1,0 +1,107 @@
+{
+    "type": "bundle",
+    "id": "bundle--18109c79-d172-4005-9db2-dc7e794ff4e8",
+    "objects": [
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--eff94ce6-87d2-4660-85b3-d9d7832e130e",
+            "created": "2026-09-30T13:19:26.962195Z",
+            "modified": "2026-09-30T13:19:26.962195Z",
+            "name": "Adversary Infrastructure Tracking and Clustering Project",
+            "identity_class": "organization"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--236620bc-11fa-4fb6-afc7-5d569d14a28b",
+            "created_by_ref": "identity--eff94ce6-87d2-4660-85b3-d9d7832e130e",
+            "created": "2026-09-30T13:19:26.962526Z",
+            "modified": "2026-09-30T13:19:26.962526Z",
+            "name": "S001 - ipv4-addr",
+            "description": "Original IOC: 1.14.73.118:34091\nSource: ThreatFox",
+            "pattern": "[network-traffic:dst_ref.value = '1.14.73.118' AND network-traffic:dst_port = 34091]",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-05T11:35:01Z",
+            "labels": [
+                "malicious-activity"
+            ],
+            "external_references": [
+                {
+                    "source_name": "ThreatFox",
+                    "external_id": "S001"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--521c2365-cc3f-4226-9e88-97c2c1153d91",
+            "created_by_ref": "identity--eff94ce6-87d2-4660-85b3-d9d7832e130e",
+            "created": "2026-09-30T13:19:26.969292Z",
+            "modified": "2026-09-30T13:19:26.969292Z",
+            "name": "S002 - ipv4-addr",
+            "description": "Original IOC: 101.42.108.164:31337\nSource: ThreatFox",
+            "pattern": "[network-traffic:dst_ref.value = '101.42.108.164' AND network-traffic:dst_port = 31337]",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-27T00:00:00Z",
+            "labels": [
+                "malicious-activity"
+            ],
+            "external_references": [
+                {
+                    "source_name": "ThreatFox",
+                    "external_id": "S002"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--3782dfff-60ed-4186-82a7-faece9228064",
+            "created_by_ref": "identity--eff94ce6-87d2-4660-85b3-d9d7832e130e",
+            "created": "2026-09-30T13:19:26.970557Z",
+            "modified": "2026-09-30T13:19:26.970557Z",
+            "name": "S003 - ipv4-addr",
+            "description": "Original IOC: 103.250.172.230:31337\nSource: ThreatFox",
+            "pattern": "[network-traffic:dst_ref.value = '103.250.172.230' AND network-traffic:dst_port = 31337]",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-02T00:00:00Z",
+            "labels": [
+                "malicious-activity"
+            ],
+            "external_references": [
+                {
+                    "source_name": "ThreatFox",
+                    "external_id": "S003"
+                }
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--3a32709f-e26f-4187-81b6-709bc4d00f65",
+            "created_by_ref": "identity--eff94ce6-87d2-4660-85b3-d9d7832e130e",
+            "created": "2026-09-30T13:19:26.97135Z",
+            "modified": "2026-09-30T13:19:26.97135Z",
+            "name": "S004 - ipv4-addr",
+            "description": "Original IOC: 103.253.42.61:31337\nSource: ThreatFox",
+            "pattern": "[network-traffic:dst_ref.value = '103.253.42.61' AND network-traffic:dst_port = 31337]",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-14T00:00:00Z",
+            "labels": [
+                "malicious-activity"
+            ],
+            "external_references": [
+                {
+                    "source_name": "ThreatFox",
+                    "external_id": "S004"
+                }
+            ]
+        }
+    ]
+}
